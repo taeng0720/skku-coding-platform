@@ -6,6 +6,7 @@ services:
     restart: always
     volumes:
       - ./data/redis:/data
+    platform: linux/amd64
 
   oj-postgres:
     image: postgres:10-alpine
@@ -17,6 +18,7 @@ services:
       - POSTGRES_DB=onlinejudge
       - POSTGRES_USER=onlinejudge
       - POSTGRES_PASSWORD=onlinejudge
+    platform: linux/amd64
 
   judge-server:
     image: skkunpc/judge-server
@@ -40,7 +42,7 @@ services:
       - SERVICE_URL=http://judge-server:8080
       - BACKEND_URL=http://coding-platform:8000/api/judge_server_heartbeat/
       - TOKEN=CHANGE_THIS
-      # - judger_debug=1
+    platform: linux/amd64
 
   coding-platform:
     image: ghcr.io/skkuding/coding-platform
@@ -60,3 +62,4 @@ services:
     ports:
       - "80:8000"
       - "443:1443"
+    platform: linux/amd64
