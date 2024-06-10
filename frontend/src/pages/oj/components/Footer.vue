@@ -8,7 +8,7 @@
         <a href="https://npc.skku.edu"><img :src="link" /></a>
       </div>
       <div class="footer-bottom">
-        <span> © 2020-2022 SKKUDING</span>
+        <span> © 2024 Comment</span>
       </div>
     </div>
   </footer>
