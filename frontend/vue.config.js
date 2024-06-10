@@ -26,7 +26,7 @@ module.exports = {
     }
   },
   devServer: {
-    disableHostCheck: true,
+    allowedHosts: 'all',
     proxy: {
       '^/(api|public)': {
         target: process.env.PROXY_URL || 'http://localhost:8000',
