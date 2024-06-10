@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   productionSourceMap: false,
@@ -48,19 +48,26 @@ module.exports = {
   },
   pluginOptions: {
     dll: {
-      entry: [
-        'vue',
-        'vuex',
-        'vue-router',
-        'bootstrap-vue',
-        'iview',
-        'highlight.js',
-        'moment',
-        'katex',
-        'core-js',
-        '@tiptap/vue-2'
-      ],
-      cacheFilePath: path.resolve(__dirname, './public')
+      entry: {
+        vendor: [
+          'vue',
+          'vuex',
+          'vue-router',
+          'bootstrap-vue',
+          'iview',
+          'highlight.js',
+          'moment',
+          'katex',
+          'core-js',
+          '@tiptap/vue-2'
+        ]
+      },
+      cacheFilePath: path.resolve(__dirname, './public/dll')
     }
-  }
-}
+  },
+  transpileDependencies: [
+    // 여기에 transpile이 필요한 종속성을 추가하세요.
+    'some-dependency',
+    'another-dependency'
+  ]
+};
