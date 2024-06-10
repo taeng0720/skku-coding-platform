@@ -8,10 +8,10 @@
     </a>
 
     <div>
-      <a class="text-2xl text-text-title mr-4 hover:text-green hover:no-underline active:text-green" href="/announcement">Notice</a>
-      <a class="text-2xl text-text-title mr-4 hover:text-green hover:no-underline" href="/contest">Contests</a>
-      <a class="text-2xl text-text-title mr-4 hover:text-green hover:no-underline" href="/problem">Problems</a>
-      <a class="text-2xl text-text-title mr-8 hover:text-green hover:no-underline" href="/lecture">Lecture</a>
+      <a class="text-2xl text-text-title mr-4 hover:text-skyblue hover:no-underline active:text-green" href="/announcement">Notice</a>
+      <a class="text-2xl text-text-title mr-4 hover:text-skyblue hover:no-underline" href="/contest">Contests</a>
+      <a class="text-2xl text-text-title mr-4 hover:text-skyblue hover:no-underline" href="/problem">Problems</a>
+      <a class="text-2xl text-text-title mr-8 hover:text-skyblue hover:no-underline" href="/lecture">Lecture</a>
     </div>
 
     <dropdown placement="right" width="w-40" id="dropdown">
